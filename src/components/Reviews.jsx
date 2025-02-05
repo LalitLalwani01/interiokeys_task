@@ -1,6 +1,5 @@
 
 const Reviews = () => {
-  // Array of reviews
   const reviews = [
     {
       name: "Piyush Goyal",
