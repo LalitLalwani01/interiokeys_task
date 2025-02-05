@@ -12,37 +12,37 @@ const Inspirations = () => {
             title: "Jewel of India/Suncity Builders",
             location: "Vaishali Nagar, Jaipur, India",
             layouts: "Layouts: 3BHK (1380Sft), 4BHK (1500Sft)",
-            image: {image1}, 
+            image: image1, 
         },
         {
             title: "La Lagune/Suncity Builders",
             location: "Vaishali Nagar, Jaipur, India",
             layouts: 'Layouts: 3BHK (1380Sft), 4BHK (1500Sft)',
-            image: {image2}, 
+            image: image2, 
         },
         {
             title: "Suncity Avenue/Suncity Builders",
             location: "Vaishali Nagar, Jaipur, India",
             layouts: 'Layouts: 3BHK (1380Sft), 4BHK (1500Sft)',
-            image: {image3}, 
+            image: image3, 
         },
         {
             title: "Suncity Avenue 76/Suncity Builders",
             location: "Vaishali Nagar, Jaipur, India",
             layouts: 'Layouts: 3BHK (1380Sft), 4BHK (1500Sft)',
-            image: {image4}, 
+            image: image4, 
         },
         {
             title: "Platinum Towers/Suncity Builders",
             location: "Vaishali Nagar, Jaipur, India",
             layouts: "Layouts: 3BHK (1380Sft), 4BHK (1500Sft)",
-            image: {image5},
+            image: image5,
         },
         {
             title: "Vatsal Valley/Suncity Builders",
             location: "Vaishali Nagar, Jaipur, India",
             layouts: 'Layouts: 3BHK (1380Sft), 4BHK (1500Sft)',
-            image: {image6},
+            image: image6,
         }
     ];
 
@@ -56,7 +56,7 @@ const Inspirations = () => {
                             <img
                                 src={project.image}
                                 alt={project.title}
-                                className="w-full h-40 object-cover"
+                                className="w-full h-[282px] object-cover"
                             />
                             <div className="p-4">
                                 <h3 className="font-bold text-gray-800">{project.title}</h3>
