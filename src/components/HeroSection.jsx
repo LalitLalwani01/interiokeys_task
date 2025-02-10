@@ -5,7 +5,7 @@ import Inspirations from "./Insperations";
 
 const HeroSection = () => {
   return (
-    <main className="w-screen">
+    <main>
       <div className="w-full h-full">
         {/* Hero Section */}
         <div className="relative bg-cover bg-center pt-10 h-64 rounded-md overflow-hidden shadow-md">
@@ -17,7 +17,7 @@ const HeroSection = () => {
         </div>
 
         {/* Main Content */}
-        <div className="flex flex-col lg:flex-row gap-6 mt-6"> {/* Removed mt-[13.5rem] */}
+        <div className="flex flex-col lg:flex-row gap-6 mt-6"> 
           {/* Left Column: Video + Inspirations */}
           <div className="w-full lg:w-3/4 bg-white p-4 shadow-md rounded-md">
             {/* Tabs */}
@@ -34,7 +34,7 @@ const HeroSection = () => {
             </div>
 
             {/* Video Section */}
-            <div className="h-[527px] mb-10 pl-7"> {/* Reduced margin-bottom */}
+            <div className="h-[527px] mb-10 pl-7">
               <div className="relative bg-gray-200 h-full rounded-md overflow-hidden shadow-md">
                 <img
                   src={Thumbnail}
@@ -62,7 +62,7 @@ const HeroSection = () => {
             </div>
 
             {/* Inspirations Section */}
-            <div className="mt-6"> {/* Added margin-top */}
+            <div className="mt-6 relative w-full">
               <Inspirations />
             </div>
           </div>

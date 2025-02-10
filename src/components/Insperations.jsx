@@ -47,28 +47,32 @@ const Inspirations = () => {
     ];
 
     return (
-        <div className="container mx-auto py-6 px-4 lg:px-8">
-            <div>
-                <h2 className="text-xl font-bold mb-4">Inspirations Created (15)</h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 mt-4">
-                    {projects.map((project, index) => (
-                        <div key={index} className="bg-white shadow-md rounded-md overflow-hidden">
-                            <img
-                                src={project.image}
-                                alt={project.title}
-                                className="w-full h-[282px] object-cover"
-                            />
-                            <div className="p-4">
-                                <h3 className="font-bold text-gray-800">{project.title}</h3>
-                                <p className="text-sm text-gray-600">{project.location}</p>
-                                <p className="text-sm text-gray-600">{project.layouts}</p>
-                            </div>
-                        </div>
-                    ))}
+        <div className="container mx-auto py-6 px-4 lg:px-8 relative">
+          <div className="relative mt-[13rem]">
+            <h2 className="text-xl font-bold">Inspirations Created (15)</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 mt-4">
+              {projects.map((project, index) => (
+                <div
+                  key={index}
+                  className="bg-white shadow-md rounded-md overflow-hidden"
+                >
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-[282px] object-cover"
+                  />
+                  <div className="p-4">
+                    <h3 className="font-bold text-gray-800">{project.title}</h3>
+                    <p className="text-sm text-gray-600">{project.location}</p>
+                    <p className="text-sm text-gray-600">{project.layouts}</p>
+                  </div>
                 </div>
+              ))}
             </div>
+          </div>
         </div>
-    );
+      );
+      
 };
 
 export default Inspirations;
